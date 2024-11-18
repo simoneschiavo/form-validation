@@ -18,6 +18,11 @@ password.addEventListener("blur", () => {
 
 password.addEventListener("keyup", () => {
     passwordValidator(password.value);
+    if (passwordValidator(password.value)) {
+        if (!password.classList.contains("input-validated")) {
+            password.classList.add("input-validated");
+        };
+    };
 });
 
 name.addEventListener("blur", () => {
@@ -26,6 +31,9 @@ name.addEventListener("blur", () => {
     } else {
         if (nameChecksContainer.classList.contains("visible")) {
             nameChecksContainer.classList.remove("visible");
+        };
+        if (!name.classList.contains("input-validated")) {
+            name.classList.add("input-validated");
         };
     };
 });

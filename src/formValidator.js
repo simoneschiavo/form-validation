@@ -13,4 +13,7 @@ export function passwordValidator(password) {
             validatedCheck.classList.add("validated");
         }
     };
+
+    const allChecksValidated = Object.values(checks).every(value => value === true);
+    return allChecksValidated;
 };
