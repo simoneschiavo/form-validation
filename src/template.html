@@ -12,7 +12,14 @@
                 <div class="check">This is a required field. Add your full name, please.</div>
             </div>
         </label>
-        <label>Email<input type="email" id="email" name="email" placeholder="bruce@wayneenterprises.com" required /></label>
+        <label>Email<input type="email" id="email" name="email" placeholder="bruce@wayneenterprises.com" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required />
+            <div class="email checks-container">
+                <div class="email-checks">
+                    <div class="check" id="required-field">This is a required field. Add your email, please.</div>
+                    <div class="check" id="wrong-pattern">Enter a real email address, please.</div>
+                </div>
+            </div>
+        </label>
         <label>Password<input type="password" id="password" name="password" required min="8" pattern="" />
             <div class="password checks-container">
                 <div class="password-checks">

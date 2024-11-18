@@ -119,7 +119,7 @@ form > button:disabled:hover {
     display: none;
 }
 
-.password-checks {
+.password-checks, .email-checks {
     display: flex;
     flex-direction: column;
     gap: .25rem;
@@ -137,4 +137,8 @@ form > button:disabled:hover {
 
 .visible {
     display: block;
+}
+
+.input-validated {
+    border: 2px solid #adbc7a;
 }
