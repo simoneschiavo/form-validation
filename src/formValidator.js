@@ -1,4 +1,4 @@
-function passwordValidator(password) {
+export function passwordValidator(password) {
     const checks = {
         hasUppercase: /[A-Z]/.test(password),
         hasLowercase: /[a-z]/.test(password),

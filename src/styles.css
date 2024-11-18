@@ -101,7 +101,7 @@ form > button:hover {
 }
 
 .checks-container {
-    /*display: none;*/
+    display: none;
 }
 
 .password-checks {
@@ -115,4 +115,8 @@ form > button:hover {
 
 .validated {
     color: #adbc7a;
+}
+
+.visible {
+    display: block;
 }
