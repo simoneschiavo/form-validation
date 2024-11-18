@@ -7,10 +7,14 @@
   </head>
   <body>
     <form novalidate>
-        <label>Name<input type="text" id="name" name="name" required /></label>
-        <label>Email<input type="email" id="email" name="email" required /></label>
+        <label>Name<input type="text" id="name" name="name" placeholder="Bruce Wayne" required />
+            <div class="name checks-container">
+                <div class="check">This is a required field. Add your full name, please.</div>
+            </div>
+        </label>
+        <label>Email<input type="email" id="email" name="email" placeholder="bruce@wayneenterprises.com" required /></label>
         <label>Password<input type="password" id="password" name="password" required min="8" pattern="" />
-            <div class="checks-container">
+            <div class="password checks-container">
                 <div class="password-checks">
                     <div class="check" id="hasUppercase">Your password should include at least one uppercase letter. Examples: A B Y</div>
                     <div class="check" id="hasLowercase">Your password should include at least one lowercase letter. Examples: a b y</div>

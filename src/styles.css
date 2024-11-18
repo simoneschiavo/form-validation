@@ -78,6 +78,12 @@ input {
     border-radius: 10px;
     border: 1px solid rgb(207, 216, 220);
     color: rgb(38 50 56);
+    transition-duration: 250ms;
+}
+
+input:focus {
+    box-shadow: 0px 5px 5px #21212133;
+    transition-duration: 250ms;
 }
 
 form > button {
@@ -114,11 +120,14 @@ form > button:disabled:hover {
 }
 
 .password-checks {
-    font-size: .75rem;
     display: flex;
     flex-direction: column;
     gap: .25rem;
     font-weight: bold;
+}
+
+.check {
+    font-size: .75rem;
     color: #f9485a;
 }
 
