@@ -6,11 +6,11 @@
     <title>Form Validation with Javascript</title>
   </head>
   <body>
-    <form>
+    <form novalidate>
       <label>Name<input type="text" id="name" name="name" required /></label>
       <label>Email<input type="email" id="email" name="email" required /></label>
-      <label>Password<input type="password" id="password" name="password" required /></label>
-      <button>Sign Up</button>
+      <label>Password<input type="password" id="password" name="password" required min="8" pattern="" /></label>
+      <button type="submit">Sign Up</button>
     </form>
   </body>
 </html>
