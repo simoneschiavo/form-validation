@@ -11,3 +11,7 @@ password.addEventListener("focus", () => {
 password.addEventListener("blur", () => {
     checksContainer.classList.remove("visible");
 });
+
+password.addEventListener("keyup", () => {
+    passwordValidator(password.value);
+})
