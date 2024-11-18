@@ -1,6 +1,8 @@
 /* 1. Use a more-intuitive box-sizing model */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -17,18 +19,31 @@ body {
 }
 
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -36,109 +51,117 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 /* Form Validation */
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 label {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    margin-bottom: 1rem;
-    color: rgb(38 50 56);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: rgb(38 50 56);
 }
 
 input {
-    padding: .75rem 1rem;
-    width: 500px;
-    border-radius: 10px;
-    border: 1px solid rgb(207, 216, 220);
-    color: rgb(38 50 56);
-    transition-duration: 250ms;
+  padding: 0.75rem 1rem;
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid rgb(207, 216, 220);
+  color: rgb(38 50 56);
+  transition-duration: 250ms;
 }
 
 input:focus {
-    box-shadow: 0px 5px 5px #21212133;
-    transition-duration: 250ms;
+  box-shadow: 0px 5px 5px #21212133;
+  transition-duration: 250ms;
 }
 
 form > button {
-    padding: .75rem 1rem;
-    margin-top: 1.5rem;
-    width: 500px;
-    background-color: #2196F3;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    color: white;
-    transition-duration: 250ms;
+  padding: 0.75rem 1rem;
+  margin-top: 1.5rem;
+  width: 500px;
+  background-color: #2196f3;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition-duration: 250ms;
 }
 
 form > button:hover {
-    box-shadow: 0px 5px 5px #21212133;
-    transition-duration: 250ms;
+  box-shadow: 0px 5px 5px #21212133;
+  transition-duration: 250ms;
 }
 
 form > button:disabled {
-    background-color: #69b4f1;
+  background-color: #69b4f1;
 }
 
 form > button:disabled:hover {
-    cursor: not-allowed;
-    box-shadow: none;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 .checks-container {
-    display: none;
+  display: none;
 }
 
-.password-checks, .email-checks {
-    display: flex;
-    flex-direction: column;
-    gap: .25rem;
-    font-weight: bold;
+.password-checks,
+.email-checks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-weight: bold;
 }
 
 .check {
-    font-size: .75rem;
-    color: #f9485a;
+  font-size: 0.75rem;
+  color: #f9485a;
 }
 
 .validated {
-    color: #adbc7a;
+  color: #adbc7a;
 }
 
 .visible {
-    display: block;
+  display: block;
 }
 
 .input-validated {
-    border: 2px solid #adbc7a;
+  border: 2px solid #adbc7a;
 }
